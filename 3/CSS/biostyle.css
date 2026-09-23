@@ -1,8 +1,7 @@
 div {
-    display: flex; 
-    align-items: center; 
     background-color: blanchedalmond;
     color: black; 
+    text-align: center; 
 }
 
 h1 {
