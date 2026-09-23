@@ -1,16 +1,14 @@
-/*
-ol {
-    display: flex; 
-    background-color: blanchedalmond; 
-}
-
-li {
+div {
     background-color: blanchedalmond;
     color: black; 
 }
-    */
 
-div {
-    background-color: blanchedalmond;
+h1 {
+    background-color: teal;
+    color: white; 
+}
+
+h2 {
+    background-color: lightcyan;
     color: black; 
 }
