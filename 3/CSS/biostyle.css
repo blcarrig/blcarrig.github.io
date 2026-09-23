@@ -15,3 +15,7 @@ h2 {
     color: black; 
     text-align: center; 
 }
+
+li {
+    text-align: left; ;
+}
