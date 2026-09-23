@@ -1,8 +1,16 @@
+/*
 ol {
+    display: flex; 
     background-color: blanchedalmond; 
 }
 
 li {
+    background-color: blanchedalmond;
+    color: black; 
+}
+    */
+
+div {
     background-color: blanchedalmond;
     color: black; 
 }
