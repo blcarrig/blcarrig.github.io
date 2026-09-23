@@ -1,7 +1,7 @@
 div {
     background-color: blanchedalmond;
     color: black; 
-    text-align: center; 
+    text-align: center;
 }
 
 h1 {
@@ -18,4 +18,8 @@ h2 {
 
 ol {
     text-align: left; ;
+}
+
+ul {
+    text-align: center;
 }
