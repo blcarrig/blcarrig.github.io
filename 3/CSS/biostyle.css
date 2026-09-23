@@ -1,20 +1,18 @@
 div {
+    display: flex; 
+    align-items: center; 
     background-color: blanchedalmond;
     color: black; 
-    position: center; 
-    padding: 30px; 
 }
 
 h1 {
     background-color: teal;
-    color: white; 
-    position: center; 
-    padding: 15px; 
+    color: white;  
+    text-align: center;
 }
 
 h2 {
     background-color: lightcyan;
     color: black; 
-    position: center; 
-    padding: 15; 
+    text-align: center; 
 }
