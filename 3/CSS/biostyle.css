@@ -1,14 +1,17 @@
 div {
     background-color: blanchedalmond;
     color: black; 
+    position: center; 
 }
 
 h1 {
     background-color: teal;
     color: white; 
+    position: center
 }
 
 h2 {
     background-color: lightcyan;
     color: black; 
+    position: center; 
 }
