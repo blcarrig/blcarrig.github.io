@@ -9,7 +9,7 @@
 }
 
 .flex-box img {
-    width: 100%; 
+    width: 33%; 
     height: auto; 
     object-fit: cover;
 }
