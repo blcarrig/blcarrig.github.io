@@ -7,6 +7,7 @@ body {
     display: flex; 
     flex: 1; 
     flex-direction: column;
+    min-height: 100vh;
     background-color: linen;
 }
 
@@ -123,9 +124,6 @@ footer {
     background-color: darkgreen;
     color: whitesmoke;
     text-align: left;
-    position: static; 
-    bottom: 0; 
-    left: 0; 
     width: 100%; 
     padding: 5px; 
      
