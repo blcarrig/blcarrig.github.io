@@ -131,6 +131,7 @@ footer {
     display: flex; 
     flex: 1;
     margin-right: 20%;
+    margin-left: 20%
 }
 
 .buttons {
