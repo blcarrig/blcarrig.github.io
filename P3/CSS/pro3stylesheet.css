@@ -62,6 +62,7 @@ h2 {
     align-items: center;
     gap: 10px;  
     padding-top: 10px; 
+    text-align: center; 
 }
 
 .nav-buttons a {
