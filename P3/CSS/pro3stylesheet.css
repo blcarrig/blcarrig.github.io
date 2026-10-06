@@ -1,7 +1,12 @@
-body {
+html, body {
+    height: 100%; 
     margin: 0; 
-    padding-top: 70px; 
-    min-height: 100vh; 
+}
+
+body {
+    display: flex; 
+    flex: 1; 
+    flex-direction: column;
 }
 
 header {
