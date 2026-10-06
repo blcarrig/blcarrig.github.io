@@ -1,5 +1,7 @@
 h1 {
     text-align: center;
+    background-color: darkgreen;
+    color: whitesmoke; 
 }
 
 .flex-box {
