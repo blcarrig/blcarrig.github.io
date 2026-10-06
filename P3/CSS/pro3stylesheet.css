@@ -45,6 +45,15 @@ h1 {
     background-color: cornsilk;
 }
 
+@media (max-width: 600px) {
+    .nav-buttons {
+        flex-direction: column;
+    }
+    .nav-buttons a {
+        text-align: center;
+    }
+}
+
 .log-in {
     width: 90%; 
     max-width: 400px;
