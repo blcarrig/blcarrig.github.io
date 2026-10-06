@@ -132,10 +132,9 @@ footer {
 .info {
     display: flex; 
     flex-direction: column;
-    align-items: center; 
+    align-items: flex-start; 
     margin-right: 20%;
     margin-left: 20%; 
-    text-align: left; 
 }
 
 .buttons {
