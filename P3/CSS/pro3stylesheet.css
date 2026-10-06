@@ -31,6 +31,10 @@ h2 {
     color: whitesmoke; 
 }
 
+h3 {
+    text-align: center;
+}
+
 .flex-box {
     display: flex;  
     justify-content: space-between;
