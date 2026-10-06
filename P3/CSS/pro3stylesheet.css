@@ -62,3 +62,9 @@ h1 {
     margin-top: 15px; 
     padding: 10px; 
 }
+
+footer {
+    background-color: darkgreen;
+    text-align: left;
+    color: whitesmoke; 
+}
