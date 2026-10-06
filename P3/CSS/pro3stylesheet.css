@@ -131,7 +131,8 @@ footer {
 
 .info {
     display: flex; 
-    flex: 1;
+    flex-direction: column;
+    align-items: center; 
     margin-right: 20%;
     margin-left: 20%; 
     text-align: left;
@@ -146,6 +147,7 @@ footer {
 }
 
 .buttons a {
+    display: block; 
     background-color: wheat;
     color: black; 
     padding: 10px 20px; 
@@ -153,10 +155,4 @@ footer {
     flex-direction: column;
     gap: 5px; 
     text-align: center;
-}
-
-.info {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
 }
