@@ -139,6 +139,7 @@ footer {
 .buttons {
     display: flex; 
     gap: 10px; 
+    display: flex; 
 }
 
 .buttons a {
@@ -150,4 +151,5 @@ footer {
 .info {
     display: flex; 
     flex-direction: column;
+    align-items: center;
 }
