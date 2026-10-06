@@ -29,6 +29,22 @@ h1 {
     }
 }
 
+.nav-buttons {
+    display: flex; 
+    gap: 10px; 
+}
+
+.nav-buttons a {
+    background-color: wheat;
+    color: black; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+}
+
+.nav-buttons a:hover {
+    background-color: cornsilk;
+}
+
 .log-in {
     width: 90%; 
     max-width: 400px;
@@ -71,6 +87,6 @@ footer {
     bottom: 0; 
     left: 0; 
     width: 100%; 
-    padding: 15px; 
+    padding: 5px; 
      
 }
