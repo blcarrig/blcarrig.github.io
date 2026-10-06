@@ -137,13 +137,20 @@ footer {
 }
 
 .buttons {
-    display: flex; 
-    gap: 10px; 
-    display: flex; 
+     display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;  
+    padding-top: 10px; 
+    text-align: center; 
 }
 
 .buttons a {
     flex: 1; 
+    background-color: wheat;
+    color: black; 
+    padding: 10px 20px; 
+    border-radius: 5px;
     flex-direction: column;
     gap: 5px; 
 }
