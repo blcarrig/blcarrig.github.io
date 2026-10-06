@@ -61,6 +61,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 10px;  
+    padding-top: 10px; 
 }
 
 .nav-buttons a {
@@ -131,7 +132,7 @@ footer {
     display: flex; 
     flex: 1;
     margin-right: 20%;
-    margin-left: 20%;
+    margin-left: 20%; 
 }
 
 .buttons {
