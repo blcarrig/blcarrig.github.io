@@ -127,6 +127,12 @@ footer {
      
 }
 
+.info {
+    display: flex; 
+    flex: 1;
+    margin-right: 20%;
+}
+
 .buttons {
     display: flex; 
     gap: 10px; 
