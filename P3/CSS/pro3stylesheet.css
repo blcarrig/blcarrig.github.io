@@ -159,3 +159,7 @@ footer {
 .buttons a:hover {
     background-color: cornsilk;
 }
+
+.cite {
+    margin-left: 20px; ;
+}
