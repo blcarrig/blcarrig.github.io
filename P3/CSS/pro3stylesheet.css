@@ -2,7 +2,11 @@ header {
     text-align: center;
     background-color: darkgreen;
     color: whitesmoke; 
+    position: fixed; 
+    width: 100%; 
+    padding: 5px; 
 }
+
 h1 {
     text-align: center;
     background-color: darkgreen;
@@ -42,6 +46,7 @@ h1 {
 }
 
 .nav-buttons a {
+    flex: 1; 
     background-color: wheat;
     color: black; 
     padding: 10px 20px; 
