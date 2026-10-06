@@ -135,7 +135,7 @@ footer {
     align-items: center; 
     margin-right: 20%;
     margin-left: 20%; 
-    text-align: left;
+    text-align: left; 
 }
 
 .buttons {
@@ -155,4 +155,8 @@ footer {
     flex-direction: column;
     gap: 5px; 
     text-align: center;
+}
+
+.buttons a:hover {
+    background-color: cornsilk;
 }
