@@ -26,7 +26,7 @@ function changeText(boardingData) {
 }
 
 function changeImg(boardingData) {
-    document.documentElement.style.setProperty("--hero-img", `url("${boardingData.hero.image}")`);
+    document.querySelector(".hero").style.setProperty("--hero-img", `url("${boardingData.hero.image}")`);
 }
 
 async function init() {
