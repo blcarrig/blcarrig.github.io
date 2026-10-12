@@ -38,4 +38,4 @@ async function init() {
     }
 }
 
-document.getElementById("changeThemeBtn").addEventListener("click", init())
+document.getElementById("changeThemeBtn").addEventListener("click", init)
