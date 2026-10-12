@@ -10,16 +10,18 @@ body {
 }
 
 h1 {
-    color: black; 
+    color: white; 
     text-align: center
 }
 
 h2 {
     color: white; 
     background-color: #FF6663;
+    text-align: center;
+    margin: 20%;
 }
 
-.buttons {
+.act_buttons {
     text-align: center;
     display: flex; 
     justify-content: center;
@@ -28,14 +30,34 @@ h2 {
     padding: 15px; 
 }
 
-.buttons a {
+.act_buttons a {
     flex: 1; 
     background-color: #FF6663;
     color: white; 
     border-radius: 5px;
 }
 
-.buttons a:hover {
+.act_buttons a:hover {
+    background-color: #d58a88;
+}
+
+.pro_buttons {
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    padding: 15px; 
+}
+
+.pro_buttons a {
+    flex: 1; 
+    background-color: #FF6663;
+    color: white; 
+    border-radius: 5px;
+}
+
+.pro_buttons a:hover {
     background-color: #d58a88;
 }
 
