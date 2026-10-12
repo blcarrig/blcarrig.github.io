@@ -15,11 +15,11 @@ function changeText(boardingData) {
     document.getElementById("sec1Subtitle").textContent = boardingData.sections.overview.subtitle;
     document.getElementById("sec2Title").textContent = boardingData.sections.equipment.title;
     document.getElementById("sec2Subtitle").textContent = boardingData.sections.equipment.subtitle;
-    boardingData.sections.overview.cards.array.forEach((card, index) => {
+    boardingData.sections.overview.cards.forEach((card, index) => {
         overviewCards[index].querySelector("h3").textContent = card.title; 
         overviewCards[index].querySelector("p").textContent = card.description; 
     });
-    boardingData.sections.equipment.cards.array.forEach((card, index) => {
+    boardingData.sections.equipment.cards.forEach((card, index) => {
         equipCards[index].querySelector("h3").textContent = card.title; 
         equipCards[index].querySelector("p").textContent = card.description; 
     });
