@@ -6,11 +6,11 @@ async function getboardingData() {
 
 function changeText(boardingData) {
     document.title = boardingData.title; 
-    const overviewCards = document.querySelectorAll("#sec1Grid.card"); 
-    const equipCards = document.querySelectorAll("#sec2Grid.card"); 
+    const overviewCards = document.querySelectorAll("sec1Grid.card"); 
+    const equipCards = document.querySelectorAll("sec2Grid.card"); 
     document.getElementById("styleName").textContent = boardingData.header; 
     document.getElementById("heroTitle").textContent = boardingData.hero.headline;
-    document.getElementById("heroDesc").textContent = boardingData.hero.discription;
+    document.getElementById("heroDesc").textContent = boardingData.hero.description;
     document.getElementById("sec1Title").textContent = boardingData.sections.overview.title; 
     document.getElementById("sec1Subtitle").textContent = boardingData.sections.overview.subtitle;
     document.getElementById("sec2Title").textContent = boardingData.sections.equipment.title;
