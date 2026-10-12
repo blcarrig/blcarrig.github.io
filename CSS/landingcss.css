@@ -15,10 +15,11 @@ h1 {
 }
 
 h2 {
-    color: white; 
+    color: black; 
     background-color: #FF6663;
     text-align: center;
     margin: 20%;
+    padding: 20px; 
 }
 
 .act_buttons {
@@ -26,14 +27,15 @@ h2 {
     display: flex; 
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 10px; 
-    padding: 15px; 
+    padding: 20px; 
 }
 
 .act_buttons a {
-    flex: 1; 
+    flex: 0; 
     background-color: #FF6663;
-    color: white; 
+    color: black; 
     border-radius: 5px;
 }
 
@@ -46,6 +48,7 @@ h2 {
     display: flex; 
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 10px; 
     padding: 15px; 
 }
@@ -53,7 +56,7 @@ h2 {
 .pro_buttons a {
     flex: 1; 
     background-color: #FF6663;
-    color: white; 
+    color: black; 
     border-radius: 5px;
 }
 
@@ -63,7 +66,7 @@ h2 {
 
 footer {
     background-color: #FF6663;
-    color: white; 
+    color: black; 
     position: fixed; 
     bottom: 0; 
     left: 0;
