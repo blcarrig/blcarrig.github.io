@@ -41,3 +41,5 @@ async function init() {
         changeImg(altText); 
     }
 }
+
+document.getElementById("changeThemeBtn").addEventListener("click", init())
