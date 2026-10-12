@@ -18,7 +18,8 @@ h2 {
     color: black; 
     background-color: #FF6663;
     text-align: center;
-    margin: 20%;
+    margin-right: 60px;
+    margin-left: 60px;
     padding: 20px; 
 }
 
@@ -36,6 +37,8 @@ h2 {
     background-color: #FF6663;
     color: black; 
     border-radius: 5px;
+    padding: 10px 20px;
+
 }
 
 .act_buttons a:hover {
@@ -56,6 +59,7 @@ h2 {
     background-color: #FF6663;
     color: black; 
     border-radius: 5px;
+    padding: 10px 20px;
 }
 
 .pro_buttons a:hover {
