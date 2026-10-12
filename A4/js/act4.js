@@ -6,31 +6,27 @@ async function getboardingData() {
 
 function changeText(altText) {
     document.title = altText.title; 
-    const equipmentCards = altText.sections.equipment.cards;
-    const overviewCards = altText.sections.overview.cards;
-    document.getElementById("header").textContent = altText.header; 
-    document.getElementById("hero-headline").textContent = altText.hero.headline;
-    document.getElementById("hero-description").textContent = altText.hero.discription;
-    document.getElementById("overview-title").textContent = altText.sections.overview.title; 
-    document.getElementById("overview-subtitle").textContent = altText.sections.overview.subtitle;
-    document.getElementById("equipment-title").textContent = altText.sections.equipment.title;
-    document.getElementById("equipment-subtitle").textContent = altText.sections.equipment.subtitle;
-    document.getElementById("overview-card-1-title").textContent = overviewCards[0].title;
-    document.getElementById("overview-card-1-description").textContent = overviewCards[0].description;
-    document.getElementById("overview-card-2-title").textContent = overviewCards[1].title;
-    document.getElementById("overview-card-2-description").textContent = overviewCards[1].description;
-    document.getElementById("overview-card-3-title").textContent = overviewCards[2].title;
-    document.getElementById("overview-card-3-description").textContent = overviewCards[2].description;
-    document.getElementById("equipment-card-1-title").textContent = equipmentCards[0].title;
-    document.getElementById("equipment-card-1-description").textContent = equipmentCards[0].description;
-    document.getElementById("equipment-card-2-title").textContent = equipmentCards[1].title;
-    document.getElementById("equipment-card-2-description").textContent = equipmentCards[1].description;
-    document.getElementById("equipment-card-3-title").textContent = equipmentCards[2].title; 
-    document.getElementById("equipment-card-3-description").textContent = equipmentCards[2].description;
+    const overviewCards = document.querySelectorAll("#sec1Grid.card"); 
+    const equipCards = document.querySelectorAll("#sec2Grid.card"); 
+    document.getElementById("styleName").textContent = altText.header; 
+    document.getElementById("heroTitle").textContent = altText.hero.headline;
+    document.getElementById("heroDesc").textContent = altText.hero.discription;
+    document.getElementById("sec1Title").textContent = altText.sections.overview.title; 
+    document.getElementById("sec1Subtitle").textContent = altText.sections.overview.subtitle;
+    document.getElementById("sec2Title").textContent = altText.sections.equipment.title;
+    document.getElementById("sec2Subtitle").textContent = altText.sections.equipment.subtitle;
+    altText.sections.overview.cards.array.forEach((card, index) => {
+        overviewCards[index].querySelector("h3").textContent = card.title; 
+        overviewCards[index].querySelector("p").textContent = card.description; 
+    });
+    altText.sections.equipment.cards.array.forEach((card, index) => {
+        equipCards[index].querySelector("h3").textContent = card.title; 
+        equipCards[index].querySelector("p").textContent = card.description; 
+    });
 }
 
 function changeImg(altText) {
-    document.documentElement.style.setProperty("--hero-img", `url("${text.hero.image}")`);
+    document.documentElement.style.setProperty("--hero-img", `url("${altText.hero.image}")`);
 }
 
 async function init() {
