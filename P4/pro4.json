@@ -9,6 +9,7 @@
                     "aa": {
                         "title": "American Alligator", 
                         "sub": "The American Alligator is a ferocious carnivore that resides in the wetlands of Northern Mississippi.", 
+                        "img": "../img/amerAlli.jpg", 
                         "f1": "Also known as the Mississippi alligator", 
                         "f2": "Its lifespan can be up to 40 years in the wild.", 
                         "f3": "Its weight can be upwards of 450 lbs, with some growing even larger.", 
@@ -20,6 +21,7 @@
                     "wtd": {
                         "title": "White-tailed Deer", 
                         "sub": "A herbivore that serves a key prey species for many of the ecosystems that it inhabits.", 
+                        "img": "../img/wtDeer.jpg",
                         "f1": "They inhabit much of the mixed forests of northern Mississippi.", 
                         "f2": "Their lifespan can range up to 4.5 years.", 
                         "f3": "They can grow to be 160 lbs.", 
@@ -31,6 +33,7 @@
                     "wbc": {
                         "title": "Wooly Bear Caterpillar", 
                         "sub": "This little guy is an herbivore that sports fuzzy black and red stripes that attempt to deceive predators into thinking they are poisonous.", 
+                        "img": "../img/woolycat.jpg",
                         "f1": "Also known as a wooly worm.", 
                         "f2": "They eventually pupate into the Isabella tiger moth, which is much less colorful than their larval stage.", 
                         "f3": "They are nocturnal.", 
@@ -42,6 +45,7 @@
                     "ms": {
                         "title": "Moccasin Snake", 
                         "sub": "These slithering carnivores have a notable pale mouth interior that gives them their common name.", 
+                        "img": "../img/waterMoc.jpg",
                         "f1": "Also known as a cottonmouth or water moccasin.", 
                         "f2": "Their lifespan can range up to 12 years.", 
                         "f3": "They can grow up to 2 lbs and 4 feet in length.", 
@@ -59,6 +63,7 @@
                     "rs": {
                         "title": "Roseate Spoonbill", 
                         "sub": "These coastal piscivores eat fish, crabs, and other small coastal prey animals.", 
+                        "img": "../img/roseSpoon.jpg",
                         "f1": "They are wading birds, meaning they use their long legs to wade into the surf and use their specialized beak to search for food.", 
                         "f2": "Their lifespan can range up to 10 years.", 
                         "f3": "They can grow up to 1.8 lbs with a wingspan of 47 to 53 inches.", 
@@ -69,6 +74,7 @@
                     "fhc": {
                         "title": "Flathead Catfish", 
                         "sub": "These Mississippi staples are piscivores, meaning they eat mainly fish and other seafood.", 
+                        "img": "../img/flatCat.jpg",
                         "f1": "Also known as a Shovelnose Cat.", 
                         "f2": "Their lifespans can range up to 15 years.", 
                         "f3": "They can weigh up to 57 lbs and grow up to 61 inches in length (Record Catch).", 
@@ -80,6 +86,7 @@
                     "rbw": {
                         "title": "Red-Bellied Woodpecker", 
                         "sub": "They are omnivorous birds native to much of southern Mississippi, as well as much of the southeast U.S.", 
+                        "img": "../img/rbWood.jpg",
                         "f1": "Their lifespans can range up to 4 years.", 
                         "f2": "They can grow up to 0.09 lbs.", 
                         "f3": "Despite their name, the most notable feature on the Red-Bellied Woodpecker is their bright red plum on their crown and back of neck. The red on their chest is very subtle in comparison."
@@ -89,6 +96,7 @@
                     "bs": {
                         "title": "Bonnethead Shark", 
                         "sub": "These omnivorous cartilaginous fish inhabit much of the Gulf Coast region of southern Mississippi.", 
+                        "img": "../img/bonHead.jpg",
                         "f1": "Their lifespans can range up to 9 years", 
                         "f2": "They can grow up to 10 lbs and 59 inches in length.", 
                         "f3": "They are in the hammerhead family of sharks, of which it is the smallest species.", 
