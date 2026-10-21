@@ -199,6 +199,29 @@ footer {
     background-color: cornsilk;
 }
 
+.back {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;  
+    width: 200px; 
+    margin: 0 auto; 
+}
+
+.backButton {
+    display: block; 
+    background-color: wheat;
+    color: black; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    text-align: center;
+    size: 30px;
+}
+
+.backButton :hover {
+    background-color: cornsilk;
+}
+
 .cite {
     margin-left: 20px; ;
 }
