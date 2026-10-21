@@ -1,5 +1,5 @@
 async function getRegion() {
-    const response = await fetch("pro4.json"); 
+    const response = await fetch("../pro4.json"); 
     regionData = await response.json(); 
     return regionData; 
 }
