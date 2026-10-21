@@ -1,16 +1,16 @@
-const northButton = document.getElementById("northButton"); 
-northButton.addEventListener("click", showNorth(north)); 
-
-const southButton = document.getElementById("southButton"); 
-southButton.addEventListener("click", showSouth(south)); 
-
-const spButton1 = document.getElementById("button1")
-
 async function getRegion() {
     const response = await fetch("pro4.json"); 
-    region = await response.json(); 
-    return region; 
+    regionData = await response.json(); 
+    return regionData; 
 }
+
+const northButton = document.getElementById("northButton"); 
+northButton.addEventListener("click", changeNorth); 
+
+const southButton = document.getElementById("southButton"); 
+southButton.addEventListener("click", changeSouth); 
+
+const spButton1 = document.getElementById("button1")
 
 function showNorth(regionData) {
     document.title = regionData.region.north.title; 
@@ -42,6 +42,17 @@ function showSouth(regionData) {
     document.getElementById("button4").textContent = regionData.region.south.species.bs.title;  
 }
 
-function changePage(regionData) {
-
+async function changeNorth() {
+    const regionData = await getRegion(); 
+    if (regionData) {
+        changeNorth(regionData);
+    }
 }
+
+async function changeSouth() {
+    const regionData = await getRegion(); 
+    if (regionData) {
+        changeSouth(regionData);
+    }
+}
+
