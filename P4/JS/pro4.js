@@ -1,5 +1,5 @@
 async function getRegion() {
-    const response = await fetch("pro4.json"); 
+    const response = await fetch("../pro4.json"); 
     if (!response.ok) {
         throw new Error(`Could not load pro4.json: ${response.status}`);
     }
