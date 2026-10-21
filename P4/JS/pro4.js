@@ -5,10 +5,10 @@ async function getRegion() {
 }
 
 const northButton = document.getElementById("northButton"); 
-northButton.addEventListener("click", changeNorth()); 
+northButton.addEventListener("click", changeNorth); 
 
 const southButton = document.getElementById("southButton"); 
-southButton.addEventListener("click", changeSouth()); 
+southButton.addEventListener("click", changeSouth); 
 
 const spButton1 = document.getElementById("button1")
 
@@ -45,14 +45,14 @@ function showSouth(regionData) {
 async function changeNorth() {
     const regionData = await getRegion(); 
     if (regionData) {
-        changeNorth(regionData);
+        showNorth(regionData);
     }
 }
 
 async function changeSouth() {
     const regionData = await getRegion(); 
     if (regionData) {
-        changeSouth(regionData);
+        showSouth(regionData);
     }
 }
 
