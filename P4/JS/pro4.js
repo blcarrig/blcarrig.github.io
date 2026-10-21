@@ -1,7 +1,10 @@
 async function getRegion() {
-    const response = await fetch("../pro4.json"); 
-    regionData = await response.json(); 
-    return regionData; 
+    const response = await fetch("pro4.json"); 
+    if (!response.ok) {
+        throw new Error(`Could not load pro4.json: ${response.status}`);
+    }
+
+    return await response.json();
 }
 
 const northButton = document.getElementById("northButton"); 
