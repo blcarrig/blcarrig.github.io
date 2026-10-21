@@ -5,10 +5,10 @@ async function getRegion() {
 }
 
 const northButton = document.getElementById("northButton"); 
-northButton.addEventListener("click", changeNorth); 
+northButton.addEventListener("click", changeNorth()); 
 
 const southButton = document.getElementById("southButton"); 
-southButton.addEventListener("click", changeSouth); 
+southButton.addEventListener("click", changeSouth()); 
 
 const spButton1 = document.getElementById("button1")
 
