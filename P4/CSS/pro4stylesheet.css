@@ -151,7 +151,7 @@ footer {
     margin: 0 auto; 
 }
 
-.northButton{
+.nButton{
     display: block; 
     background-color: wheat;
     color: black; 
@@ -160,7 +160,7 @@ footer {
     text-align: center;
 }
 
-.southButton{
+.sButton{
     display: block; 
     background-color: wheat;
     color: black; 
@@ -169,11 +169,11 @@ footer {
     text-align: center;
 }
 
-.northButton:hover {
+.nButton:hover {
     background-color: cornsilk;
 }
 
-.southButton:hover {
+.sButton:hover {
     background-color: cornsilk;
 }
 
