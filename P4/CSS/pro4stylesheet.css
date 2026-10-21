@@ -186,7 +186,7 @@ footer {
     margin: 0 auto; 
 }
 
-.button1{
+.spButtons a{
     display: block; 
     background-color: wheat;
     color: black; 
@@ -195,46 +195,7 @@ footer {
     text-align: center;
 }
 
-.button2{
-    display: block; 
-    background-color: wheat;
-    color: black; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    text-align: center;
-}
-
-.button3{
-    display: block; 
-    background-color: wheat;
-    color: black; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    text-align: center;
-}
-
-.button4{
-    display: block; 
-    background-color: wheat;
-    color: black; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    text-align: center;
-}
-
-.button1:hover {
-    background-color: cornsilk;
-}
-
-.button2:hover {
-    background-color: cornsilk;
-}
-
-.button3:hover {
-    background-color: cornsilk;
-}
-
-.button4:hover {
+.spButtons a:hover {
     background-color: cornsilk;
 }
 
