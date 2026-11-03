@@ -1,1 +1,62 @@
+async function getRegion() {
+    const response = await fetch("../pro5.json"); 
+    if (!response.ok) {
+        throw new Error(`Could not load pro5.json: ${response.status}`);
+    }
+
+    return await response.json();
+}
+
+const northButton = document.getElementById("northButton"); 
+northButton.addEventListener("click", changeNorth); 
+
+const southButton = document.getElementById("southButton"); 
+southButton.addEventListener("click", changeSouth); 
+
+const spButton1 = document.getElementById("button1")
+
+function showNorth(regionData) {
+    document.title = regionData.region.north.title; 
+    document.getElementById("peli").hidden = true;
+    document.getElementById("alli").hidden = false;  
+    document.getElementById("header2").textContent = regionData.region.north.title; 
+    document.getElementsByClassName("info").textContent = regionData.region.north.info; 
+    document.getElementById("header3").hidden = true; 
+    document.getElementsByClassName("buttons").style.display = "none"; 
+    document.getElementsByClassName("spButtons").style.display = "block";
+    document.getElementById("button1").textContent = regionData.region.north.species.aa.title; 
+    document.getElementById("button2").textContent = regionData.region.north.species.wtd.title; 
+    document.getElementById("button3").textContent = regionData.region.north.species.wbc.title;  
+    document.getElementById("button4").textContent = regionData.region.north.species.ms.title; 
+}
+
+function showSouth(regionData) {
+    document.title = regionData.region.south.title; 
+    document.getElementById("peli").hidden = false;
+    document.getElementById("alli").hidden = true; 
+    document.getElementById("header2").textContent = regionData.region.south.title; 
+    document.getElementsByClassName("info").textContent = regionData.region.south.info; 
+    document.getElementById("header3").hidden = true; 
+    document.getElementsByClassName("buttons").style.display = "none"; 
+    document.getElementsByClassName("spButtons").style.display = "block";
+    document.getElementById("button1").textContent = regionData.region.south.species.rs.title; 
+    document.getElementById("button2").textContent = regionData.region.south.species.fhc.title; 
+    document.getElementById("button3").textContent = regionData.region.south.species.rbw.title;  
+    document.getElementById("button4").textContent = regionData.region.south.species.bs.title;  
+}
+
+async function changeNorth() {
+    const regionData = await getRegion(); 
+    if (regionData) {
+        showNorth(regionData);
+    }
+}
+
+async function changeSouth() {
+    const regionData = await getRegion(); 
+    if (regionData) {
+        showSouth(regionData);
+    }
+}
+
 
