@@ -1,61 +1,54 @@
-async function getRegion() {
-    const response = await fetch("../pro5.json"); 
-    if (!response.ok) {
-        throw new Error(`Could not load pro5.json: ${response.status}`);
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Ben Carrigee">
+    <meta name="description" content="Contact Page">
+    <meta name="keywords" content="biology, ecosystems, wildlife">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/png" href="../IMG/ecosystem.png">
+    <link rel="stylesheet" href="../CSS/pro5stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <div class="flex-box">   
+        <img src="../IMG/birdCallCrop.jpg" alt="A bird yelling its heart out.">
+    </div>
 
-    return await response.json();
-}
+    <nav class="nav-buttons">
+        <a href="../indexPro5.html">Home</a>
+        <a href="index2Step.html">Regions</a>
+        <a href="indexContact.html">Contact Us</a>
+    </nav>
 
-const northButton = document.getElementById("northButton"); 
-northButton.addEventListener("click", changeNorth); 
+    <div class="contact-form">
+        <h2>Submission Form</h2>
+        <form class="form-login">
+            <div class="contact-line">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="contact-line">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="contact-line">
+                <label for="message">Message:</label>
+                <input type="message" id="message" name="message">
+            </div>
+            <button type="submitButton">Submit</button>
+        </form>
+    </div>
 
-const southButton = document.getElementById("southButton"); 
-southButton.addEventListener("click", changeSouth); 
+    
 
-const spButton1 = document.getElementById("button1")
+    <footer>
+        <p>2026 CSCI 3054</p>
+        <p>&copy; 2026 Ben Carrigee. All rights reserved.</p>
+        <p>Icon Copyright: ecosystem by BnB Studio from <a href="https://thenounproject.com/browse/icons/term/ecosystem/" target="_blank" title="ecosystem Icons">Noun Project</a> (CC BY 3.0)</p>
+    </footer>
 
-function showNorth(regionData) {
-    document.title = regionData.region.north.title; 
-    document.getElementById("peli").hidden = true;
-    document.getElementById("alli").hidden = false;  
-    document.getElementById("header2").textContent = regionData.region.north.title; 
-    document.getElementsByClassName("info").textContent = regionData.region.north.info; 
-    document.getElementById("header3").hidden = true; 
-    document.getElementsByClassName("buttons").style.display = "none"; 
-    document.getElementsByClassName("spButtons").style.display = "block";
-    document.getElementById("button1").textContent = regionData.region.north.species.aa.title; 
-    document.getElementById("button2").textContent = regionData.region.north.species.wtd.title; 
-    document.getElementById("button3").textContent = regionData.region.north.species.wbc.title;  
-    document.getElementById("button4").textContent = regionData.region.north.species.ms.title; 
-}
-
-function showSouth(regionData) {
-    document.title = regionData.region.south.title; 
-    document.getElementById("peli").hidden = false;
-    document.getElementById("alli").hidden = true; 
-    document.getElementById("header2").textContent = regionData.region.south.title; 
-    document.getElementsByClassName("info").textContent = regionData.region.south.info; 
-    document.getElementById("header3").hidden = true; 
-    document.getElementsByClassName("buttons").style.display = "none"; 
-    document.getElementsByClassName("spButtons").style.display = "block";
-    document.getElementById("button1").textContent = regionData.region.south.species.rs.title; 
-    document.getElementById("button2").textContent = regionData.region.south.species.fhc.title; 
-    document.getElementById("button3").textContent = regionData.region.south.species.rbw.title;  
-    document.getElementById("button4").textContent = regionData.region.south.species.bs.title;  
-}
-
-async function changeNorth() {
-    const regionData = await getRegion(); 
-    if (regionData) {
-        showNorth(regionData);
-    }
-}
-
-async function changeSouth() {
-    const regionData = await getRegion(); 
-    if (regionData) {
-        showSouth(regionData);
-    }
-}
-
+</body>
+</html>
