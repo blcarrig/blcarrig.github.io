@@ -226,3 +226,36 @@ footer {
     margin-left: 20px; ;
 }
 
+.contact-form {
+    width: 90%; 
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.contact-form h2 {
+    text-align: center;
+}
+
+.contact-form {
+    display: flex; 
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.contact-line {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+.contact-line input {
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 10px; 
+}
+
+.contact-form button {
+    width: 100%; 
+    margin-top: 15px; 
+    padding: 10px; 
+}
