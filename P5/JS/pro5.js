@@ -1,3 +1,16 @@
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBT3QwPVzCeWJs1FQbi3Neid0VHGJi1cd4",
+  authDomain: "csci-3054-project-5.firebaseapp.com",
+  projectId: "csci-3054-project-5",
+  storageBucket: "csci-3054-project-5.firebasestorage.app",
+  messagingSenderId: "284189196833",
+  appId: "1:284189196833:web:b77fa40118d48bea481960"
+};
+
+const app = initializeApp(firebaseConfig);
+
 async function getRegion() {
     const response = await fetch("../pro5.json"); 
     if (!response.ok) {
@@ -58,5 +71,4 @@ async function changeSouth() {
         showSouth(regionData);
     }
 }
-
 
